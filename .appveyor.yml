@@ -1,4 +1,6 @@
 
+image: Ubuntu1804
+
 stack: node 18  # окружение
 
 branches:

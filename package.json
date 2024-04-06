@@ -17,6 +17,7 @@
     "live-server": "^1.2.1"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.24.4",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-jest": "^29.7.0",

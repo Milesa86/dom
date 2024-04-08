@@ -1,11 +1,13 @@
+import image from '../assets/goblin.png';
+
 export default class Game {
   constructor() {
     this.gameBoard = document.querySelector('.game-board');
   }
 
   createGameBoard() {
-    for (let i = 0; i < 4; i++) {
-      for (let j = 0; j < 4; j++) {
+    for (let i = 0; i < 4; i += 1) {
+      for (let j = 0; j < 4; j += 1) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
         this.gameBoard.appendChild(cell);
@@ -22,7 +24,7 @@ export default class Game {
     let prevPosition = -1;
     let position;
     const goblin = document.createElement('img');
-    goblin.setAttribute('src', 'https://github.com/netology-code/ahj-homeworks/raw/video/dom/pic/goblin.png');
+    goblin.setAttribute('src', image);
 
     setInterval(() => {
       do {
